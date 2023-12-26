@@ -23,3 +23,10 @@ const myPromise2 = hacerAlgo(2);
     myPromise2
         .then((result) => console.log("El dato retornado por la promesa es: " + result))
         .catch((err) => console.error(err))
+
+// fetch es una promesa
+
+fetch("https://jsonplaceholder.typicode.com/users")
+    .then(data => data.json())
+    .then(response => console.log(response))
+    .catch(error => console.error(error))
