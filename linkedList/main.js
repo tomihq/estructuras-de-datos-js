@@ -13,7 +13,14 @@ Es decir, para ir recorriendo hay que ir cambiando el currentNode.
 
 Es una especie de hilo, si o si tengo el primer valor, luego el segundo pero si ya el primero es nulo, no existe un segundo.
 
-Ejemplos de uso: Cuando estas viendo un curso, o una serie que te dice cual es el capitulo que sigue.
+Ejemplos de uso: Cuando estas viendo un curso, o una serie que te dice cual es el capitulo que sigue. Esto es importante de saber porque las sugerencias en las aplicaciones de peliculas se suelen hacer cuando está terminando de verse un capítulo, es decir, son manipulables en tiempo real.
+
+Array (Arreglo) vs LinkedList
+Ambos almacenan elementos.
+Ventajas de los Arrays: Tienen tamaños fijos (En su definición) acá en JS son más "listas" que arrays. Puedo encontrar elementos por sus índices.
+Desventajas de los Arrays: Si hay que agregar un elemento, o quitar uno, hay que crear un array desde 0.
+Ventajas de LinkedList: Puedo agregar y quitar elementos ilimitadamente. 
+Desventajas de LinkedList: Para encontrar un elemento en el peor de los casos recorro n elementos. Es más pesado que un array porque almacena el siguiente elemento. Para poder insertar un elemento tengo que recorrer los n elementos.
 
 */
 
