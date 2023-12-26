@@ -1,0 +1,10 @@
+{
+    "name": "Tomi",
+    "email": "tomi@hola.com",
+    "site": "https://www.tomashernandez.net",
+    "skills": ["backend", "frontend"],
+    "address": {
+        "country": "AR",
+        "region": "CABA"
+    }
+}
