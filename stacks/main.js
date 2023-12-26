@@ -51,5 +51,9 @@ console.log(stack);
 stack.pop();
 console.log(stack);
 console.log(stack.peek())
-
 console.log(stack.isEmpty())
+
+while(!stack.isEmpty()){
+    console.log(stack.peek());
+    stack.pop()
+}
