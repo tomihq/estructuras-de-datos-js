@@ -35,3 +35,22 @@ console.log(tomi.hi()) //Llamo a la función de clase hi()
 
 
 const hector = new People('hector', 'hq') //Objeto hector de la clase People.
+
+class Student extends People {
+    constructor(name, lastName, career){
+        super(name, lastName); //Hacemos referencia a los atributos del padre. Llamo a su constructor.
+        this.career = career;
+    }
+
+    hi(){
+        return super.hi() + " es estudiante de " + this.career //Accedo al hi del objeto padre (People) y le agrego algo propio.
+    }
+
+    careerDetail(){
+        return "Estudia " + this.career
+    }
+}
+
+const maria = new Student("Maria", "López", "Ing. Civil"); //Objeto maria de la clase Student. Hereda las funcionalidades de People.
+console.log(maria.hi())
+console.log(maria.careerDetail())
