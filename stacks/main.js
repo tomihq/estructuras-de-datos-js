@@ -4,18 +4,15 @@
 
     Un ejemplo de stack puede ser cuando en el celular vemos las tareas en segundo plano, estas son un stack porque la ultima que abrimos es la primera que vemos.
 
-    En JS, para agregar un elemento a un array usamos push y para quitar el ultimo pop.
+    En JS, para agregar un elemento a un array usamos push y para quitar el ultimo pop. 
+    Importante: Cuando eliminamos un elemento de un stack, hay que retornar cual fue el eliminado.
 
     No se puede recorrer una pila, porque la idea siempre es ir sacando elemento a elemento. Por lo tanto si habria que "recorrer" la pila, tendriamos que ir sacando los elementos uno a uno para ir mostrandolos. Porque tenemos que: muestro - saco - muestro - saco, osea peek() - pop() - peek() - pop()
 */
 
 class Stack{
     items = [];
-
-    constructor(items){
-        this.items = items;
-    }
-    
+ 
     //añadir
     push(elemento){
         this.items.push(elemento);
@@ -23,7 +20,7 @@ class Stack{
 
     //eliminar
     pop(){
-        this.items.pop()
+        return this.items.pop()
     }
 
     //último elemento
@@ -44,7 +41,9 @@ class Stack{
 
 //No podemos hacerle más nada al stack más que añadir, eliminar, ver el último elemento o la longitud.
 
-const stack = new Stack([1, 2]);
+const stack = new Stack();
+stack.push(1);
+stack.push(2);
 console.log(stack)
 stack.push(3);
 console.log(stack);
